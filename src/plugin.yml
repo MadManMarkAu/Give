@@ -1,3 +1,7 @@
 name: Give
-version: 0.1
+version: 0.2
 main: net.madmanmarkau.Give.Give
+commands:
+  give:
+    description: Gives user items.
+    usage: /give <item> [<amount>]
