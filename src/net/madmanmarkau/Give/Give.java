@@ -87,7 +87,8 @@ public class Give extends JavaPlugin {
 
 				if (Permissions.has(player, "give")) {
 					if (args.length == 0) {
-						sender.sendMessage(ChatColor.RED + "&c/give <item> [<amount>]:");
+						sender.sendMessage(ChatColor.RED + "/give <item> [<amount>]");
+						return true;
 					}
 
 					if (args.length >= 1) {
@@ -124,7 +125,8 @@ public class Give extends JavaPlugin {
 			} else {
 				// Server/plugin sent command
 				if (args.length == 0) {
-					sender.sendMessage(ChatColor.RED + "&c/give <player> <item> [<amount>]:");
+					sender.sendMessage(ChatColor.RED + "/give <player> <item> [<amount>]");
+					return true;
 				}
 
 				if (args.length >= 1) {

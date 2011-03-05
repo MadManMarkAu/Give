@@ -1,5 +1,5 @@
 name: Give
-version: 0.2
+version: 0.3
 main: net.madmanmarkau.Give.Give
 commands:
   give:
