@@ -1,7 +1,11 @@
 name: Give
 version: 0.3
 main: net.madmanmarkau.Give.Give
+author: MadManMarkAu
+description: >
+             Command to give items to player.
 commands:
-  give:
+  give_give:
     description: Gives user items.
-    usage: /give <item> [<amount>]
+    aliases: give
+    usage: /<command> <item> [<amount>]

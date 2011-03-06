@@ -2,7 +2,6 @@ package net.madmanmarkau.Give;
 
 import java.util.logging.Logger;
 
-import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.PluginDescriptionFile;
@@ -80,14 +79,14 @@ public class Give extends JavaPlugin {
 		int quantity = 1;
 		Player player = null;
 
-		if ( cmd.getName().compareToIgnoreCase("give") == 0 ) {
+		if ( cmd.getName().compareToIgnoreCase("give_give") == 0 ) {
 			if (sender instanceof Player) {
 				// Player-sent command
 				player = (Player) sender;
 
 				if (Permissions.has(player, "give")) {
 					if (args.length == 0) {
-						sender.sendMessage(ChatColor.RED + "/give <item> [<amount>]");
+						sender.sendMessage("/give <item> [<amount>]");
 						return true;
 					}
 
@@ -125,7 +124,7 @@ public class Give extends JavaPlugin {
 			} else {
 				// Server/plugin sent command
 				if (args.length == 0) {
-					sender.sendMessage(ChatColor.RED + "/give <player> <item> [<amount>]");
+					sender.sendMessage("/give <player> <item> [<amount>]");
 					return true;
 				}
 
